@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 01</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Задание:
+        Перепишите данный код на использование классов вместо функций-конструкторов.
+        */
+        class Car {
+    constructor(year, model) {
+        this.year = year;     
+        this.model = model;
+    }
+    carInfo() {
+        return this.model + " " + this.year;
+    }
+    }
+    let obj1 = new Car(2018, "Audi"); 
+    console.log(obj1.carInfo()); 
+    </script>
+</body>
+
+</html>
